@@ -104,7 +104,7 @@ async function ruleSearchLink(msg){
         await browser.close();
     }catch(e){;
             console.log(searchURL);
-            msg.reply("***Não consegui encontrar sua carta*** :sob:")
+            msg.reply(":sob: ***Não consegui encontrar sua carta*** :sob:")
     }
 }
 
@@ -125,6 +125,6 @@ async function ruleSearch(link, msg){
         await browser.close();
     }catch(e){;
             console.log(e);
-            msg.reply("***Não consegui encontrar sua carta*** :sob:")
+            msg.reply(":sob: ***Não consegui encontrar sua carta*** :sob:")
     }
 }
