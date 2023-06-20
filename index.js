@@ -60,7 +60,7 @@ async function priceSearch(msg) {
     msg.channel.send("Menor: " + pageContent.min_preco + "\nMédio: " + pageContent.med_preco + "\nMaior: " + pageContent.max_preco)
     
     await browser.close();
-    }catch(e){;
+    }catch(e){; //SE NÃO CONSEGUIR ENCONTRAR
 
         try{
             const searchList = await page.evaluate(() =>{
