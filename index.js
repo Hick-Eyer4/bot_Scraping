@@ -127,7 +127,8 @@ async function priceSearch(msg) {
         inline: true,
       }
     );
-
+      console.log('teste')
+      
       msg.reply({ embeds: [embed] });
 
       // msg.reply(searchList.card_image);
